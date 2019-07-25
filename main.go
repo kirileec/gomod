@@ -11,7 +11,7 @@ import (
 func main() {
 	app := cli.NewApp()
 	app.Name = "gomod"
-	app.Version = "0.1.0"
+	app.Version = "0.1.1"
 	app.Usage = "go mod for great firewall"
 
 	app.Commands = []cli.Command{
@@ -19,6 +19,11 @@ func main() {
 			Name:   "tidy",
 			Usage:  "add missing and remove unused modules",
 			Action: mod.ActionGoModTidy,
+		},
+		{
+			Name:   "tidy1",
+			Usage:  "add missing and remove unused modules",
+			Action: mod.ActionGomodTidy1,
 		},
 		{
 			Name:   "graph",
