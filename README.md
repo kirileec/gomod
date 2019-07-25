@@ -3,7 +3,7 @@
 ### 安装 
 
 ```
-go get -v -u github.com/hqpko/gomod
+go get -v -u github.com/kirileec/gomod
 ```
 
 ### `gomod tidy`
@@ -13,6 +13,16 @@ go get -v -u github.com/hqpko/gomod
  
  > 推荐的方式还是直接设置 `export GOPROXY=https://athens.azurefd.net`，使用 `go mod tidy`
  
+### `gomod tidy1`
+
+内置了 `GOPROXY="https://goproxy.io"`，可以默认在 `gomod tidy` 时使用代理（没有设置 `GOPROXY` 的情况下），
+代理相关见 <https://github.com/goproxyio/goproxy>
+
+这个代理地址在中国更快
+
+ 
+ > 推荐的方式还是直接设置 `export GOPROXY=https://goproxy.io`，使用 `go mod tidy`
+
  ### `gomod graph`
  
  原版的 `go mod graph` 看起来如下
